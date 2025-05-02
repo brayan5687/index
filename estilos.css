@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://www.itl.cat/pngfile/big/119-1191814_fondos-de-pantalla-bonitos-de-amor.jpg');
+    background-size: cover;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.corazones {
+    margin-top: 20px;
+    font-size: 36px;
+    color: red;
+    animation: latido 1s infinite;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#respuesta {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#carita {
+    font-size: 48px;
+    margin-top: 20px;
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
